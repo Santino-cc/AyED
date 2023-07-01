@@ -8,8 +8,9 @@ int main(){
      double pi = 0;
     int numerador = 1;
     double denominador = 1;
+    int i = 0;
 
-    for(int i = 0; i < 1000000; i++){ // Me aseguro de que el proceso continúe lo máximo posible.
+     while (abs(4 * pi - 3.141592) >= 0.000001) { // Coon el while me aseguro de que el proceso continúe hasta el fallo.
         denominador = 2 * i +1; // Calculo el denominador usando la fórmula de número impar: 2 * k + 1; el i va subiendo progresivamente.
         pi += numerador / denominador; // Hago la cuenta general, el numerador que es siempre 1 dividio por el denominador mencionado previamente
         numerador *= -1; // Me aseguro de que el signo del numerador cambie de 1 a -1 constantemente
