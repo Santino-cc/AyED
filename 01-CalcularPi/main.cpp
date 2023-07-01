@@ -14,6 +14,7 @@ int main(){
         denominador = 2 * i +1; // Calculo el denominador usando la fórmula de número impar: 2 * k + 1; el i va subiendo progresivamente.
         pi += numerador / denominador; // Hago la cuenta general, el numerador que es siempre 1 dividio por el denominador mencionado previamente
         numerador *= -1; // Me aseguro de que el signo del numerador cambie de 1 a -1 constantemente
+        i++;
     }
     
     pi *= 4; // Al ser el resultado de pi = pi / 4, lo multplico por 4 para que me quede solo pi.
